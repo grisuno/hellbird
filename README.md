@@ -14,9 +14,9 @@
 
 ---
 
-- **GitHub Repository:** [https://github.com/grisuno/ebird3](https://github.com/grisuno/ebird3)
+- **GitHub Repository:** [https://github.com/grisuno/hellbird](https://github.com/grisuno/hellbird)
 - **License:** GNU General Public License v3.0 (GPLv3)
-- **Author:** grisuno
+- **Author:** grisun0
 - **Target Platform:** Windows (x64)
 - **Purpose:** Academic research and red teaming exercises
 
