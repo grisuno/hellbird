@@ -30,7 +30,7 @@ This document provides a comprehensive introduction to the hellbird repository, 
 
 For detailed information about specific payload generation processes, see Payload Generation System. For integration into red team frameworks, see Framework Integration. For technical implementation details of evasion techniques, see Evasion Techniques.
 
-`hellbird` is a sophisticated **Early Bird APC injection Over HELLHATES** tool designed to **download and execute shellcode** in a suspended legitimate Windows process using **Direct syscalls** and **asynchronous procedure calls (APC)**. It leverages **string obfuscation**, **anti-analysis techniques**, and **manual WinSock HTTP downloading** to evade basic detection mechanisms.
+`hellbird` is a sophisticated **Early Bird APC injection Over HELLGATES** tool designed to **download and execute shellcode** in a suspended legitimate Windows process using **Direct syscalls** and **asynchronous procedure calls (APC)**. It leverages **string obfuscation**, **anti-analysis techniques**, and **manual WinSock HTTP downloading** to evade basic detection mechanisms.
 
 This tool is intended **exclusively for academic and ethical penetration testing purposes**.
 
