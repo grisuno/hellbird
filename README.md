@@ -2,6 +2,8 @@
 
 [https://medium.com/@lazyown.redteam/the-ebird3-chronicles-when-your-calculator-gets-a-phd-in-cybercrime-and-why-thats-perfectly-cc1738a3affc](https://medium.com/@lazyown.redteam/the-ebird3-chronicles-when-your-calculator-gets-a-phd-in-cybercrime-and-why-thats-perfectly-cc1738a3affc)
 
+[https://deepwiki.com/grisuno/hellbird](https://deepwiki.com/grisuno/hellbird)
+
 <img width="1024" height="1024" alt="hellbird2" src="https://github.com/user-attachments/assets/f9cea2cb-09d7-432f-98d4-5bcfe9677be9" />
 
 
