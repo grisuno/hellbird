@@ -1,8 +1,8 @@
-# ebird3 – Advanced Early Bird APC Injection Tool
+# HELLBIRD
 
 [https://medium.com/@lazyown.redteam/the-ebird3-chronicles-when-your-calculator-gets-a-phd-in-cybercrime-and-why-thats-perfectly-cc1738a3affc](https://medium.com/@lazyown.redteam/the-ebird3-chronicles-when-your-calculator-gets-a-phd-in-cybercrime-and-why-thats-perfectly-cc1738a3affc)
 
-<img width="1328" height="1328" alt="image" src="https://github.com/user-attachments/assets/dbda3075-43c1-4b0d-8580-b4c9ad7886b0" />
+<img width="1024" height="1024" alt="hellbird2" src="https://github.com/user-attachments/assets/f9cea2cb-09d7-432f-98d4-5bcfe9677be9" />
 
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
