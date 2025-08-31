@@ -229,6 +229,7 @@ Promote awareness of living-off-the-land techniques.
 - https://app.hackthebox.com/users/1998024
 - https://patreon.com/LazyOwn 
 - https://deepwiki.com/grisuno/ebird3
+- https://deepwiki.com/grisuno/hellbird
 - https://github.com/grisuno/cgoblin
 - https://github.com/grisuno/gomulti_loader
 - https://github.com/grisuno/ShadowLink
