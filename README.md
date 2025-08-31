@@ -38,6 +38,9 @@ This tool is intended **exclusively for academic and ethical penetration testing
 
 ## 🛠️ Technical Details
 
+<img width="756" height="876" alt="image" src="https://github.com/user-attachments/assets/c73993f0-4b2d-4a02-a232-3408572c5939" />
+
+
 <img width="1706" height="329" alt="image" src="https://github.com/user-attachments/assets/61b9a1b0-d90d-4a81-a698-c39ee6e23b7c" />
 
 ## Direct Syscall Implementation
