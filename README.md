@@ -72,14 +72,14 @@ The Early Bird APC injection technique combined with direct syscalls provides mu
 
 ## 📦 Build Process
 
-The `gen_ebird3.sh` script generates:
-- `ebird2.c`: The main implant source code with embedded obfuscated configuration.
+The `get_hellbird.sh` script generates:
+- `hellbird.c`: The main implant source code with embedded obfuscated configuration.
 - `Makefile`: Cross-compilation rules using MinGW-w64.
 
 ### Build Requirements
 
 ```bash
-sudo apt install mingw-w64
+sudo apt install mingw-w64 && sh install.sh
 ```
 ### Build
 ```bash
