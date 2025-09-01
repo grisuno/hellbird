@@ -79,7 +79,7 @@ The Early Bird APC injection technique combined with direct syscalls provides mu
 
 ## 📦 Build Process
 
-The `get_hellbird.sh` script generates:
+The `get_hellbird3.sh` script generates:
 - `hellbird.c`: The main implant source code with embedded obfuscated configuration.
 - `Makefile`: Cross-compilation rules using MinGW-w64.
 
