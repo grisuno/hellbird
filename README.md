@@ -201,6 +201,29 @@ rule ebird3_NtQueueApcThread_Heuristic {
         $apc_call and $alloc_exec and $page_exec_rw
 }
 ```
+```yara
+rule hellbird_EarlyBird_HellsGate {
+    meta:
+        author = "LazyOwn BlueTeam"
+        description = "Detects hellbird Early Bird + Hell's Gate injector"
+        license = "GPLv3"
+
+    strings:
+        $ntdll_import = "ntdll.dll" ascii wide
+        $syscalls[4] = (
+            "NtAllocateVirtualMemory"
+            "NtWriteVirtualMemory"
+            "NtQueueApcThread"
+            "NtResumeThread"
+        )
+        $create_suspended = { 6A 04 6A 00 6A 00 6A 00 6A 00 6A 00 } // CREATE_SUSPENDED
+        $xor_loop = { 68 ?? ?? ?? ?? 68 ?? ?? ?? ?? e8 ?? ?? ?? ?? 83 c4 08 }
+        $peb_access = "gs:0x60" nocase
+
+    condition:
+        all of ($syscalls) and $ntdll_import and $create_suspended and $xor_loop and $peb_access
+}
+```
 
 ## 🛡️ Evasion Techniques
 - NT API Calls
