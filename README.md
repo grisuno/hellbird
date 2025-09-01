@@ -18,6 +18,7 @@
 - **License:** GNU General Public License v3.0 (GPLv3)
 - **Author:** grisun0
 - **Target Platform:** Windows (x64)
+- **Source Platform:** GNU/Linux 6.12 (tested on Kali)
 - **Purpose:** Academic research and red teaming exercises
 
 > ⚠️ **This project is released under GPLv3. See the [DISCLAIMER](#-disclaimer---no-warranty-or-liability) section for full legal terms.**
