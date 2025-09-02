@@ -1,6 +1,6 @@
 # HELLBIRD
 
-[https://medium.com/@lazyown.redteam/the-ebird3-chronicles-when-your-calculator-gets-a-phd-in-cybercrime-and-why-thats-perfectly-cc1738a3affc](https://medium.com/@lazyown.redteam/the-ebird3-chronicles-when-your-calculator-gets-a-phd-in-cybercrime-and-why-thats-perfectly-cc1738a3affc)
+[https://medium.com/@lazyown.redteam/the-hellbird-chronicles-when-your-notepad-becomes-a-cyber-assassin-and-why-thats-a-feature-not-54544dc2e099](https://medium.com/@lazyown.redteam/the-hellbird-chronicles-when-your-notepad-becomes-a-cyber-assassin-and-why-thats-a-feature-not-54544dc2e099)
 
 [https://deepwiki.com/grisuno/hellbird](https://deepwiki.com/grisuno/hellbird)
 
