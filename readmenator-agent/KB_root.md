@@ -1,12 +1,11 @@
 # Subsystem: root
 
 ## app.py
-- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
 - Layer: utility
+- Doc: app.py  Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación: xx/xx/xxxx Licenci
 - Language: py
 
 ## gen_ebird3.sh
-- Doc: xor_string: Función para XOR y convertir a array C
 - Layer: utility
 - Language: sh
 - Symbols:
@@ -14,24 +13,24 @@
   - `xor_string` (function, line 57)
 
 ## gen_hellbird.sh
-- Doc: === CONFIGURACIÓN HELLBIRD ===
 - Layer: utility
+- Doc: === CONFIGURACIÓN HELLBIRD ===
 - Language: sh
 - Symbols:
   - `usage` (function, line 14)
   - `xor_string` (function, line 64)
 
 ## gen_hellbird2.sh
-- Doc: === CONFIGURACIÓN HELLBIRD ===
 - Layer: utility
+- Doc: === CONFIGURACIÓN HELLBIRD ===
 - Language: sh
 - Symbols:
   - `usage` (function, line 14)
   - `xor_string` (function, line 64)
 
 ## gen_hellbird3.sh
-- Doc: === CONFIGURACIÓN HELLBIRD FINAL ===
 - Layer: utility
+- Doc: === CONFIGURACIÓN HELLBIRD FINAL ===
 - Language: sh
 - Symbols:
   - `usage` (function, line 14)

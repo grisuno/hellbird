@@ -11,7 +11,7 @@
 
 **Total Files Parsed:** 6 | **Total Symbols Extracted:** 8 | **Total Imports:** 1
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -25,13 +25,12 @@
 7. [Change Impact Analysis](#change-impact-analysis)
 8. [Suggested Linting Rules](#suggested-linting-rules)
 9. [Dataflow Analysis](#dataflow-analysis)
-10. [Concept Graph](#concept-graph)
-11. [Orphans](#orphans)
-12. [Query Recipes](#query-recipes)
-13. [Structural Knowledge Map](#structural-knowledge-map)
-14. [UML Class Diagram](#uml-class-diagram)
-15. [Code Property Graph](#code-property-graph)
-16. [Architecture Reference](#architecture-reference)
+10. [Orphans](#orphans)
+11. [Query Recipes](#query-recipes)
+12. [Structural Knowledge Map](#structural-knowledge-map)
+13. [UML Class Diagram](#uml-class-diagram)
+14. [Code Property Graph](#code-property-graph)
+15. [Architecture Reference](#architecture-reference)
     - [PY (1 files)](#py-1-files)
     - [SH (5 files)](#sh-5-files)
 
@@ -155,39 +154,6 @@ Procedural intra-function dataflow findings (zero tokens, regex-based heuristics
 | `gen_hellbird3.sh` | `xor_string` | 339 | `DEAD_STORE` | `path_len` | `path_len` assigned at line 339 but never read afterwards. |
 | `gen_hellbird3.sh` | `xor_string` | 266 | `UNCHECKED_ALLOC` | `sc` | Result of allocator stored in `sc` is never checked against NULL. |
 | `gen_hellbird3.sh` | `xor_string` | 360 | `UNCHECKED_ALLOC` | `sock` | Result of allocator stored in `sock` is never checked against NULL. |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**9 concepts, 0 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `gen` | 4 | 8 |
-| `xor` | 4 | 8 |
-| `string` | 4 | 5 |
-| `usage` | 4 | 4 |
-| `hellbird` | 3 | 5 |
-| `array` | 3 | 3 |
-| `configuraci` | 3 | 3 |
-| `funci` | 3 | 3 |
-| `uso` | 3 | 3 |
-
-### Dialectic Prompts
-
-- Thesis: `array` centralizes 3 files; Antithesis: `configuraci` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `funci` pulls 3 files with 3 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `gen` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `hellbird` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `string` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `usage` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `uso` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `array` centralizes 3 files; Antithesis: `xor` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `configuraci` centralizes 3 files; Antithesis: `funci` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `configuraci` centralizes 3 files; Antithesis: `gen` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
 
 ---
 
