@@ -1,0 +1,111 @@
+{
+  "concepts": [
+    {
+      "name": "gen",
+      "files": [
+        "gen_ebird3.sh",
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "xor",
+      "files": [
+        "gen_ebird3.sh",
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "string",
+      "files": [
+        "gen_ebird3.sh",
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "usage",
+      "files": [
+        "gen_ebird3.sh",
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "hellbird",
+      "files": [
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "array",
+      "files": [
+        "gen_ebird3.sh",
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "configuraci",
+      "files": [
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "funci",
+      "files": [
+        "gen_ebird3.sh",
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "uso",
+      "files": [
+        "gen_hellbird.sh",
+        "gen_hellbird2.sh",
+        "gen_hellbird3.sh"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [],
+  "dialectic": [
+    "Thesis: `array` centralizes 3 files; Antithesis: `configuraci` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `funci` pulls 3 files with 3 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `gen` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `hellbird` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `string` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `usage` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `uso` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `array` centralizes 3 files; Antithesis: `xor` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `configuraci` centralizes 3 files; Antithesis: `funci` pulls 3 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `configuraci` centralizes 3 files; Antithesis: `gen` pulls 4 files with 3 shared (Jaccard 0.75); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}
